@@ -1,32 +1,124 @@
-<section class="showcase" id="showcase">
-    <div class="section-container">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <div class="section-header">
-            <span class="section-label">Visuals</span>
-            <h2 class="section-title">Tribrid In Action</h2>
-            <p class="section-description">
-                Real concept. Real engineering. Real future.
-            </p>
-        </div>
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0f;
+    color: white;
+}
 
-        <div class="showcase-grid">
+.navbar {
+    background: #13131a;
+    padding: 1rem 2rem;
+}
 
-            <!-- LEFT IMAGE -->
-            <div class="showcase-item">
-                <div class="showcase-image" id="showcase1"></div>
-                <div class="showcase-overlay">
-                    <h3>Engineering Blueprint</h3>
-                    <p>Designed for maximum efficiency and innovation.</p>
-                </div>
-            </div>
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-            <!-- RIGHT IMAGE -->
-            <div class="showcase-item">
-                <div class="showcase-image" id="showcase2"></div>
-                <div class="showcase-overlay">
-                    <h3>Energy Flow Concept</h3>
-                    <p>Smart energy integration across systems.</p>
-                </div>
-            </div>
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
 
-        </div>
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.primary-button {
+    padding: 1rem 2rem;
+    border: none;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.features {
+    background: #13131a;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: #1a1a24;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.showcase {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.showcase-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.showcase-item {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.showcase-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#showcase1 {
+    background-image: url("showcase1.png");
+}
+
+#showcase2 {
+    background-image: url("showcase2.png");
+}
+
+.showcase-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.footer {
+    padding: 2rem;
+    text-align: center;
+    background: #13131a;
+}
