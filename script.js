@@ -72,34 +72,10 @@ const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const name = document.getElementById('name')?.value;
-        const email = document.getElementById('email')?.value;
-        const message = document.getElementById('message')?.value;
-
+    
         console.log(name, email, message);
     });
 }
-  
-    // Simulate form submission
-    const submitButton = contactForm.querySelector('.submit-button');
-    const originalText = submitButton.textContent;
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-    
-    setTimeout(() => {
-        submitButton.textContent = 'Message Sent! ✓';
-        submitButton.style.background = 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)';
-        
-        setTimeout(() => {
-            submitButton.textContent = originalText;
-            submitButton.style.background = '';
-            submitButton.disabled = false;
-            contactForm.reset();
-        }, 2000);
-    }, 1500);
-});
 
 // Add parallax effect to hero orbs
 window.addEventListener('mousemove', (e) => {
@@ -201,6 +177,7 @@ const throttledScroll = throttle(() => {
 window.addEventListener('scroll', throttledScroll);
 
 console.log('🚀 Nexus website loaded successfully!');
+
 
 
 
