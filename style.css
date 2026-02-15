@@ -479,13 +479,16 @@ body {
     background-position: center;
     transition: transform var(--transition-slow);
 }
-
 #showcase1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('TRibrid YRONS.png');
+    background-size: cover;
+    background-position: center;
 }
 
 #showcase2 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background-image: url('d3360f21-c467-40b0-b185-b23ca42fff5-rem.png');
+    background-size: cover;
+    background-position: center;
 }
 
 #showcase3 {
