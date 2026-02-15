@@ -1,32 +1,35 @@
 <section class="showcase" id="showcase">
-  <div class="section-container">
+    <div class="section-container">
 
-    <div class="section-header">
-      <span class="section-label">Visuals</span>
-      <h2 class="section-title">Tribrid In Action</h2>
-      <p class="section-description">
-        Real concept. Real engineering. Real future.
-      </p>
-    </div>
-<div class="showcase-grid">
-
-    <div class="showcase-item">
-        <div class="showcase-image" id="showcase1"></div>
-        <div class="showcase-overlay">
-            <h3>Dynamic Energy System</h3>
-            <p>Solar, wind & regenerative power working together.</p>
+        <div class="section-header">
+            <span class="section-label">Visuals</span>
+            <h2 class="section-title">Tribrid In Action</h2>
+            <p class="section-description">
+                Real concept. Real engineering. Real future.
+            </p>
         </div>
-    </div>
 
-    <div class="showcase-item">
-        <div class="showcase-image" id="showcase2"></div>
-        <div class="showcase-overlay">
-            <h3>Engineering Blueprint</h3>
-            <p>Designed for maximum efficiency and innovation.</p>
+        <div class="showcase-grid">
+
+            <!-- LEFT IMAGE -->
+            <div class="showcase-item">
+                <div class="showcase-image" id="showcase1"></div>
+                <div class="showcase-overlay">
+                    <h3>Dynamic Energy System</h3>
+                    <p>Solar, wind & regenerative power working together.</p>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="showcase-item">
+                <div class="showcase-image" id="showcase2"></div>
+                <div class="showcase-overlay">
+                    <h3>Engineering Blueprint</h3>
+                    <p>Designed for maximum efficiency and innovation.</p>
+                </div>
+            </div>
+
         </div>
+
     </div>
-
-</div>
-
-
-
+</section>
