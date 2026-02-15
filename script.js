@@ -1,4 +1,4 @@
-// Navbar scroll effect
+ // Navbar scroll effect
 const navbar = document.getElementById('navbar');
 let lastScroll = 0;
 
@@ -157,7 +157,6 @@ function throttle(func, wait) {
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
     };
-}
 
 // Apply throttling to scroll-heavy operations
 const throttledScroll = throttle(() => {
@@ -167,6 +166,7 @@ const throttledScroll = throttle(() => {
 window.addEventListener('scroll', throttledScroll);
 
 console.log('🚀 Nexus website loaded successfully!');
+
 
 
 
