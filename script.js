@@ -69,7 +69,10 @@ document.querySelectorAll('.showcase-item').forEach((item, index) => {
 
 // Form submission
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+
     e.preventDefault();
     
     const name = document.getElementById('name').value;
@@ -195,3 +198,4 @@ const throttledScroll = throttle(() => {
 window.addEventListener('scroll', throttledScroll);
 
 console.log('🚀 Nexus website loaded successfully!');
+
