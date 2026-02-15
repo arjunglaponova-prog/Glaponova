@@ -480,13 +480,13 @@ body {
     transition: transform var(--transition-slow);
 }
 #showcase1 {
-    background-image: url('TRibrid YRONS.png');
+    background-image: url('showcase1.png');
     background-size: cover;
     background-position: center;
 }
 
 #showcase2 {
-    background-image: url('d3360f21-c467-40b0-b185-b23ca42fff5-rem.png');
+    background-image: url('showcase2.png');
     background-size: cover;
     background-position: center;
 }
@@ -690,3 +690,4 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
