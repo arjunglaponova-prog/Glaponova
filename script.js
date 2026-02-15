@@ -102,7 +102,6 @@ document.querySelectorAll('button').forEach(button => {
         
         setTimeout(() => ripple.remove(), 600);
     });
-});
 
 // Add CSS animation for ripple
 const style = document.createElement('style');
@@ -166,6 +165,7 @@ const throttledScroll = throttle(() => {
 window.addEventListener('scroll', throttledScroll);
 
 console.log('🚀 Nexus website loaded successfully!');
+
 
 
 
