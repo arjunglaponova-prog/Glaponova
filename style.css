@@ -480,13 +480,13 @@ body {
     transition: transform var(--transition-slow);
 }
 #showcase1 {
-    background-image: url('showcase1.png');
+    background-image: url('/Glaponova/showcase1.png');
     background-size: cover;
     background-position: center;
 }
 
 #showcase2 {
-    background-image: url('showcase2.png');
+    background-image: url('/Glaponova/showcase2.png');
     background-size: cover;
     background-position: center;
 }
@@ -690,5 +690,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
