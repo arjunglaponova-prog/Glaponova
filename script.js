@@ -67,15 +67,6 @@ document.querySelectorAll('.showcase-item').forEach((item, index) => {
     observer.observe(item);
 });
 
-// Form submission
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-    
-        console.log(name, email, message);
-    });
-}
 
 // Add parallax effect to hero orbs
 window.addEventListener('mousemove', (e) => {
@@ -176,6 +167,7 @@ const throttledScroll = throttle(() => {
 window.addEventListener('scroll', throttledScroll);
 
 console.log('🚀 Nexus website loaded successfully!');
+
 
 
 
