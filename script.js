@@ -81,13 +81,7 @@ if (contactForm) {
         console.log(name, email, message);
     });
 }
-
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
+  
     // Simulate form submission
     const submitButton = contactForm.querySelector('.submit-button');
     const originalText = submitButton.textContent;
@@ -207,5 +201,6 @@ const throttledScroll = throttle(() => {
 window.addEventListener('scroll', throttledScroll);
 
 console.log('🚀 Nexus website loaded successfully!');
+
 
 
