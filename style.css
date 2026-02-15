@@ -13,7 +13,7 @@
 
       <!-- LEFT IMAGE -->
       <div class="showcase-item">
-        <div class="showcase-image" id="showcase1"></div>
+        <div class="showcase-image" id="showcase2"></div>
         <div class="showcase-overlay">
           <h3>Dynamic Energy System</h3>
           <p>Solar, wind & regenerative power working together.</p>
@@ -22,7 +22,7 @@
 
       <!-- RIGHT IMAGE -->
       <div class="showcase-item">
-        <div class="showcase-image" id="showcase2"></div>
+        <div class="showcase-image" id="showcase1"></div>
         <div class="showcase-overlay">
           <h3>Engineering Blueprint</h3>
           <p>Designed for maximum efficiency and innovation.</p>
@@ -32,3 +32,4 @@
     </div>
   </div>
 </section>
+
