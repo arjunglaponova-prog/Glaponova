@@ -90,8 +90,7 @@ window.addEventListener('mousemove', (e) => {
         
         orb.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
     });
-});
-
+    
 // Add hover effect to buttons
 document.querySelectorAll('button').forEach(button => {
     button.addEventListener('mouseenter', function(e) {
@@ -177,6 +176,7 @@ const throttledScroll = throttle(() => {
 window.addEventListener('scroll', throttledScroll);
 
 console.log('🚀 Nexus website loaded successfully!');
+
 
 
 
