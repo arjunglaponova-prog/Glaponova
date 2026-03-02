@@ -75,7 +75,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 var(--spacing-lg);
     display: flex;
@@ -687,6 +687,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
