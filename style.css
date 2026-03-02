@@ -155,10 +155,12 @@ body {
 
 /* ===== HERO SECTION ===== */
  .hero {
+  position: relative;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 140px;   /* adjust this */
+  align-items: center;      /* centers horizontally */
+  justify-content: center;  /* centers vertically */
+  text-align: center;
 }
 .hero-background {
     position: absolute;
@@ -667,8 +669,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-
 
 
 
