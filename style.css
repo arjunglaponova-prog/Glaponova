@@ -154,12 +154,12 @@ body {
 }
 
 /* ===== HERO SECTION ===== */
- .hero {
+.hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  align-items: center;      /* centers horizontally */
-  justify-content: center;  /* centers vertically */
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
   text-align: center;
 }
 .hero-background {
@@ -668,6 +668,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
