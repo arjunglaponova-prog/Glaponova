@@ -98,13 +98,15 @@ body {
     gap: var(--spacing-lg);
 }
 
-.nav-link {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.2rem;
-    position: relative;
-    transition: color var(--transition-fast);
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-gradient);
+    transition: width var(--transition-base);
 }
 
 .nav-link:hover,
@@ -541,6 +543,7 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
+
 
 
 
