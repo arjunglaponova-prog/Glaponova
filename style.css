@@ -310,7 +310,7 @@ body {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 100px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   top: auto;
@@ -682,6 +682,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
