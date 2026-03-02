@@ -226,14 +226,13 @@ body {
     max-width: 900px;
 }
 
-.hero-title {
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: var(--spacing-lg);
+.hero-title img {
+  width: 420px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-
 .title-line {
     display: block;
 }
@@ -668,6 +667,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
