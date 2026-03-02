@@ -154,18 +154,13 @@ body {
 }
 
 /* ===== HERO SECTION ===== */
-.hero {
-   <section class="hero">
-  <div class="hero-content">
-    <h1>Tribrid EV</h1>
-    <p>...</p>
-    <a class="btn">Explore Now</a>
-  </div>
-
-  <div class="scroll-indicator">
-    ...
-  </div>
-</section>
+  .hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .hero-background {
     position: absolute;
@@ -689,6 +684,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
