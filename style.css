@@ -158,10 +158,9 @@ body {
   position: relative;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  align-items: center;      /* centers horizontally */
+  justify-content: center;  /* centers vertically */
+  text-align: center;
 }
 .hero-background {
     position: absolute;
@@ -685,6 +684,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
