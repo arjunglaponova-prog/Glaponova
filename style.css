@@ -310,21 +310,6 @@ body {
     font-size: 0.8rem;
 }
 
-.scroll-indicator {
-  position: static;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-@keyframes bounce {
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(10px);
-    }
-}
-
 .mouse {
     width: 30px;
     height: 50px;
@@ -683,6 +668,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
