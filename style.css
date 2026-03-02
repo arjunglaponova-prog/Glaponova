@@ -83,12 +83,12 @@ body {
     justify-content: space-between;
 }
 
-.logo {
-     height: 36px;
+.logo img {
+  height: 36px;
+  max-height: 36px;
   width: auto;
   display: block;
 }
-
 .logo-icon {
     background: var(--primary-gradient);
     -webkit-background-clip: text;
@@ -687,6 +687,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
