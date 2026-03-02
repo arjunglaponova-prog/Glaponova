@@ -313,13 +313,11 @@ body {
 }
 
 .scroll-indicator {
-    position: absolute;
-    bottom: var(--spacing-xl);
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
 @keyframes bounce {
     0%, 100% {
         transform: translateX(-50%) translateY(0);
@@ -687,6 +685,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
