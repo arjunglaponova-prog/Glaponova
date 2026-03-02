@@ -98,6 +98,15 @@ body {
     gap: var(--spacing-lg);
 }
 
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color var(--transition-fast);
+}
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -107,6 +116,13 @@ body {
     height: 2px;
     background: var(--primary-gradient);
     transition: width var(--transition-base);
+}
+
+.nav-link:hover,
+.nav-link.active { color: var(--text-primary); }
+
+.nav-link:hover::after,
+.nav-link.active::after { width: 100%; }
 }
 
 .nav-link:hover,
@@ -543,6 +559,7 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
+
 
 
 
