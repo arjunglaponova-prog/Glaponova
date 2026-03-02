@@ -314,9 +314,10 @@ body {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;      /* distance from bottom */
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
+  top: auto;
 }
 @keyframes bounce {
     0%, 100% {
@@ -685,6 +686,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
