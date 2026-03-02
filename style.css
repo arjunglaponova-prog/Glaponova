@@ -155,8 +155,9 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    position: relative;
-    min-height: 100vh;
+    .hero {
+  position: relative;
+  height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -686,6 +687,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
