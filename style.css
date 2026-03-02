@@ -78,7 +78,7 @@ body {
 }
 
 .logo img {
-    height: 45px; /* adjust this value as needed */
+    height: 30px; /* adjust this value as needed */
     width: auto;
     display: block;
 }
@@ -550,6 +550,7 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
+
 
 
 
