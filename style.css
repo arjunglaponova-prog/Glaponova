@@ -138,7 +138,7 @@ body {
 
 .cta-button {
     padding: 0.75rem 1.5rem;
-    background: var(--primary-gradient);
+     background: linear-gradient(135deg, #007cf0, #00e676);
     border: none;
     border-radius: 50px;
     color: white;
@@ -668,6 +668,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
