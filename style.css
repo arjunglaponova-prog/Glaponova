@@ -54,7 +54,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 70px 80px; /* changed from 10px to 20px */
+    padding: 90px 100px; /* changed from 10px to 20px */
     background: rgba(10,10,15,0.8);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -552,6 +552,7 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
+
 
 
 
