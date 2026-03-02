@@ -256,10 +256,11 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-xl);
-    line-height: 1.8;
+  color: #cfefff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 20px auto 0;
 }
 
 .hero-buttons {
@@ -668,6 +669,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
