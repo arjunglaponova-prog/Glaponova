@@ -326,8 +326,14 @@ body {
 .section-description {
     font-size: 1.2rem;
     color: var(--text-secondary);
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
+    text-align: center;
+}
+
+/* ===== PROBLEM ===== */
+.problem {
+    background: var(--dark-bg);
 }
 
 /* ===== FEATURES ===== */
@@ -545,10 +551,6 @@ model-viewer {
 @media (max-width: 768px) {
     .nav-menu    { display: none; }
     .nav-tagline { display: none; }
-    /* ===== PROBLEM ===== */
-.problem {
-    background: var(--dark-bg);
-}
 
     .hero-buttons { flex-direction: column; align-items: center; }
 
@@ -557,9 +559,3 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
-/* ===== PROBLEM ===== */
-.problem {
-    background: var(--dark-bg);
-}
-
-
