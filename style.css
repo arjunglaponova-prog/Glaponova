@@ -376,3 +376,106 @@ body {
 
 .feature-card:hover .feature-icon {
     transform: scale(1.1) ro
+
+    @media (max-width: 900px) {
+
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .nav-tagline { display: none; }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(10,10,15,0.98);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-xl);
+        z-index: 999;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+        background: none;
+        border: none;
+        padding: 4px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+        transition: all var(--transition-base);
+    }
+
+    .hamburger.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .logo img { height: 45px; }
+
+    .hero-title img { width: 260px; }
+
+    .hero-subtitle { font-size: 0.95rem; }
+
+    .hero-buttons { flex-direction: column; align-items: center; }
+
+    .section-container {
+        padding: var(--spacing-xl) var(--spacing-sm);
+    }
+
+    .section-title {
+        font-size: clamp(1.4rem, 5vw, 2.2rem);
+    }
+
+    .section-description { font-size: 0.95rem; }
+
+    .features-grid,
+    .showcase-grid { grid-template-columns: 1fr; }
+
+    model-viewer { height: 300px; }
+
+    .contact-card {
+        padding: var(--spacing-lg) var(--spacing-sm);
+        max-width: 100%;
+    }
+
+    .footer {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+}
+
