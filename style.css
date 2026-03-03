@@ -1,3 +1,4 @@
+/* v2 */
 /* ===== CSS RESET & BASE ===== */
 * {
     margin: 0;
@@ -738,3 +739,4 @@ model-viewer {
         gap: var(--spacing-md);
     }
 }
+
