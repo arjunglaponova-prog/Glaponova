@@ -1,6 +1,5 @@
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
-
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 50) {
         navbar?.classList.add('scrolled');
@@ -45,7 +44,6 @@ window.addEventListener('mousemove', (e) => {
     const orbs = document.querySelectorAll('.gradient-orb');
     const x = e.clientX / window.innerWidth;
     const y = e.clientY / window.innerHeight;
-
     orbs.forEach((orb, index) => {
         const speed = (index + 1) * 20;
         const xOffset = (x - 0.5) * speed;
@@ -54,8 +52,7 @@ window.addEventListener('mousemove', (e) => {
     });
 });
 
-console.log("Website loaded successfully 🚀");
-
+// Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
@@ -72,3 +69,4 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
+console.log("Website loaded successfully 🚀");
