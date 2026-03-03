@@ -746,4 +746,5 @@ model-viewer {
         justify-content: center;
         gap: var(--spacing-md);
     }
-}
+.hamburger { display: none; }
+
