@@ -116,6 +116,13 @@ body {
     height: 2px;
     background: var(--primary-gradient);
     transition: width var(--transition-base);
+}
+
+.nav-link:hover,
+.nav-link.active { color: var(--text-primary); }
+
+.nav-link:hover::after,
+.nav-link.active::after { width: 100%; }
 
 .cta-button {
     padding: 0.75rem 1.5rem;
@@ -545,17 +552,3 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
