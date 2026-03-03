@@ -545,6 +545,10 @@ model-viewer {
 @media (max-width: 768px) {
     .nav-menu    { display: none; }
     .nav-tagline { display: none; }
+    /* ===== PROBLEM ===== */
+.problem {
+    background: var(--dark-bg);
+}
 
     .hero-buttons { flex-direction: column; align-items: center; }
 
@@ -553,3 +557,4 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
+
