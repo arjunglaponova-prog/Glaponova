@@ -557,4 +557,9 @@ model-viewer {
 
     model-viewer { height: 380px; }
 }
+/* ===== PROBLEM ===== */
+.problem {
+    background: var(--dark-bg);
+}
+
 
