@@ -48,6 +48,11 @@ body {
     overflow-x: hidden;
 }
 
+/* Prevent background scroll when mobile menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
 /* ===== NAVIGATION ===== */
 .navbar {
     position: fixed;
@@ -647,6 +652,7 @@ model-viewer {
 
     .nav-tagline { display: none; }
 
+    /* Full-screen overlay menu */
     .nav-menu {
         display: none;
         position: fixed;
@@ -655,27 +661,47 @@ model-viewer {
         right: 0;
         bottom: 0;
         background: rgba(10,10,15,0.98);
+        backdrop-filter: blur(20px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: var(--spacing-xl);
-        z-index: 999;
+        z-index: 1002; /* above navbar and logo */
     }
 
     .nav-menu.open {
         display: flex;
     }
 
-    .nav-link {
-        font-size: 1.5rem;
+    /* Animate links in when menu opens */
+    .nav-menu.open li {
+        animation: menuLinkIn 0.35s ease both;
     }
 
+    .nav-menu.open li:nth-child(1) { animation-delay: 0.05s; }
+    .nav-menu.open li:nth-child(2) { animation-delay: 0.10s; }
+    .nav-menu.open li:nth-child(3) { animation-delay: 0.15s; }
+    .nav-menu.open li:nth-child(4) { animation-delay: 0.20s; }
+    .nav-menu.open li:nth-child(5) { animation-delay: 0.25s; }
+    .nav-menu.open li:nth-child(6) { animation-delay: 0.30s; }
+
+    @keyframes menuLinkIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .nav-link {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    /* Hamburger button - always on top */
     .hamburger {
         display: flex;
         flex-direction: column;
         gap: 5px;
         cursor: pointer;
-        z-index: 1001;
+        z-index: 1003; /* above the open menu so user can close it */
         background: none;
         border: none;
         padding: 4px;
@@ -739,4 +765,3 @@ model-viewer {
         gap: var(--spacing-md);
     }
 }
-
