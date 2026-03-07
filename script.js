@@ -56,17 +56,41 @@ window.addEventListener('mousemove', (e) => {
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
+function openMenu() {
+    hamburger.classList.add('open');
+    navMenu.classList.add('open');
+    document.body.classList.add('menu-open');
+}
+
+function closeMenu() {
+    hamburger.classList.remove('open');
+    navMenu.classList.remove('open');
+    document.body.classList.remove('menu-open');
+}
+
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navMenu.classList.toggle('open');
+    if (hamburger.classList.contains('open')) {
+        closeMenu();
+    } else {
+        openMenu();
+    }
 });
 
-// Close menu when a link is clicked
+// Close menu when a nav link is clicked
 document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navMenu.classList.remove('open');
-    });
+    link.addEventListener('click', closeMenu);
+});
+
+// Close menu when clicking the dark overlay background
+navMenu.addEventListener('click', (e) => {
+    if (e.target === navMenu) {
+        closeMenu();
+    }
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
 });
 
 console.log("Website loaded successfully 🚀");
